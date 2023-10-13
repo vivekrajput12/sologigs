@@ -1,0 +1,54 @@
+.sliderback{
+    background-color: antiquewhite;
+}
+.slider{
+    margin-left: 15vw;;
+    width: 800px;
+    overflow: hidden;
+position: relative;
+padding: 26px;
+display: flex;
+
+/* justify-content: center; */
+align-items: center;
+
+}
+.product-container{
+    width: 1000px;
+    gap: 63px;
+    padding: 0 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* position: absolute; */
+}
+.pre-btn , .next-btn{
+        background-color: transparent;
+        font-size: large;
+        font-weight: bolder;
+        border: none;
+        width: 40px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: gainsboro;
+        height: 43px;
+        border-radius: 50px;
+
+}
+.pre-btn{
+    left: 0;
+}
+.next-btn{
+        right: 0;
+}
+.pre-btn p, .next-btn p{
+    font-size: 50px;
+    background-color: rgb(249, 249, 249);
+    /* box-shadow: ; */
+    border-radius: 5px;
+    color: rgb(119, 119, 119);
+    width: 50px;
+    height: 50px;
+}
