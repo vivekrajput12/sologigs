@@ -1,0 +1,51 @@
+.home2{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    .topmost{
+        display: flex;
+        gap: 5%;
+        background-color: #40408f;
+        color: white;
+        img{
+            height: 50vh;
+            width: 50vh;
+        }
+        .text2{
+            width: 48vw;
+            margin-left: 12%;
+            line-height: 7vh;
+            font-size: 20px;
+            margin-top: 8%;
+        }
+    }
+    .top{
+        display: flex;
+        gap: 27%;
+        img{
+            height: 50vh;
+            width: 50vh;
+            height: fit-content;
+        }
+        .uppertext{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .text{
+                width: 48vw;
+                margin-left: 9%;
+                line-height: 7vh;
+                font-size: 20px;
+            }
+            .lefttext{
+                width: 48vw;
+                margin-left: 42%;
+                line-height: 7vh;
+            font-family: caveat;
+                font-size: 28px;
+            }
+        }
+        
+    }
+    
+}

@@ -11,7 +11,7 @@ export const deleteReview = (req , res , next)=>{
 export const createReview = async(req , res , next)=>{
         const newReview = new Review({
                 userId : req.userId,
-                gigId : req.body.gigId,
+                gigId : req.body.gigid,
                 star : req.body.star,
                 desc : req.body.desc 
 
@@ -26,7 +26,7 @@ export const createReview = async(req , res , next)=>{
         const saveReview  = newReview.save();
         res.status(201).send(saveReview);
 
-        await gig.findByIdAndUpdate(req.body.gigId, {$inc:{totalStars: req.body.star , starNumber:1}});
+        await gig.findByIdAndUpdate(req.body.gigid, {$inc:{totalStars: req.body.star , starNumber:1}});
         }catch(err){
                 next(err);
         }

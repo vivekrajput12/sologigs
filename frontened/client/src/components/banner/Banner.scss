@@ -1,0 +1,41 @@
+.banner{
+        position: relative;
+        .imgi{
+                position: relative;
+                display: inline-block;
+            .img{
+                background-size: cover;
+                width: 100vw;
+                display: block;
+                height: 1000px;
+            }
+            .heading{
+                position: absolute;
+                z-index: 1; position: absolute;
+                top: 50%;
+                left: 20%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.7); // Optional: Add a semi-transparent background to make text more readable
+                padding: 20px; // Optional: Add padding around text
+                z-index: 1; 
+                button{
+                    background-color: #1dbf73;
+              padding: 10px;
+              color: white;
+              font-weight: 500;
+              border: none;
+              font-size: 18px;
+              cursor: pointer;
+              width: 100%;
+                }
+            }
+            .arrowbtn{
+                position: absolute;
+                z-index: 1; 
+                bottom: 2%;
+                color: wheat;
+                right: 4%;
+            }
+
+    }}

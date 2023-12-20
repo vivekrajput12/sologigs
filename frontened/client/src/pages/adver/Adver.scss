@@ -1,0 +1,114 @@
+.adver{
+  
+    // position: relative;
+    // width: 100%;
+    height: fit-content; /* Set a height for the container */
+    // color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    // link{
+    //   text-decoration: none;
+    //   font-size: x-large;
+    //   font-family: system-ui;
+    // }
+    background-image: url('../advertise/white.jpg'); /* Replace with your image URL */
+    background-repeat: repeat-y;
+    background-repeat: repeat-x; /* Repeat vertically */
+     /* Repeat vertically */
+    background-size: contain;
+  
+    display: flex;
+    justify-content: center;
+      .container{
+        width: 1175px;
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        // gap: 15px;
+            .breadcrumbs{
+                font-size: 13px;
+                font-weight: 300;
+                color: #555;
+            }
+            p{
+                color: #999;
+                font-weight: 300;
+            }
+            .menu{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 30vw;
+                .left{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color:#555;
+                    font-weight: 300;
+                    input{
+                        padding: 3px;
+                        border: 1px , solid , lightgray;
+                        outline: none;
+                        &::placeholder{
+                            color: gray;
+                        }
+                    }
+                    button{
+                        padding: 5px 10px;
+                        background-color: #1dbf73;
+                        color: white;
+                        border: none;
+                        font-weight: 500;
+                        border-radius: 5px;
+                        cursor: pointer;
+                      }
+                }
+                .right{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: 160px;
+                    .SortBy {
+                      color: #555;
+                      font-weight: 300;
+                    }
+            
+                    .SortType {
+                      font-weight: bold;
+                    }
+            
+                    img {
+                      width: 15px;
+                      cursor: pointer;
+                    }
+                    .rightmenu {
+                        padding: 13px;
+                        background-color: white;
+                        border: 0.5px solid lightgrey;
+                        border-radius: 5px;
+                        position: absolute;
+                        top: 30px;
+                        right: 0;
+                        z-index: 9;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 11px;
+                        color: #555;
+              
+                        span {
+                          cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .cards{
+              margin-top: 50px;
+              display: flex;
+              justify-content: center;
+              // justify-content: space-between;
+              gap: 38px;
+              flex-wrap: wrap;
+            }
+      }
+}

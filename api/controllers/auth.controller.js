@@ -34,19 +34,23 @@ export const login = async (req , res,next)=>{
                       },
                       process.env.JWT_KEY
                     );
-                    console.log("Token generated:", token);
+                    // console.log("Token generated:", token);***
                         
             
                 const { password, ...info } = user._doc;
                 res.cookie("accessToken", token, {
-                    httpOnly: false,
-                  })
-                  .status(200)
-                  .send(info);
+                  httpOnly: false,
+                  path: "/" ,
+                  secure:true,
+                  sameSite: "none",
+              })
+              // console.log("cookiee.." ,  req.cookies.accessToken);***
+              res.status(200)
+              .send(info);
               } catch (err) {
                 next(err);
               }
-              console.log("cookiee.." ,  req.cookies.accessToken);
+              
 
 }   
 export const logout = async (req, res) => {

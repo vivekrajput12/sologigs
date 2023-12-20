@@ -1,0 +1,34 @@
+.hcart{
+    margin-top: 1%;
+    margin-left: 4%;
+    display: flex;
+    gap: 10%;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 5.1);
+    width: 90%;
+    height: 27vh;
+    // background: linear-gradient(#f3f3f3, #5b66b5);
+    background: linear-gradient(#f3f3f3, #6f738f);
+    .left{
+        .itemimg{
+            width: 21vw;
+            height: 27vh;
+        }
+    }
+    hr{
+        margin: 0;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+        font-size: smaller;
+        .star{
+            display: flex;
+            img{
+                height: 3vh;
+            }
+        }
+    }
+}
